@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Games</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #00FFAA;
+            font-family: "Courier New", Courier, monospace;
+            font-weight: 900;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .game-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .game-button {
+            background-color: transparent;
+            border: 2px solid #00FFAA;
+            color: #00FFAA;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-family: "Courier New", Courier, monospace;
+            font-weight: 900;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .game-button:hover {
+            color: #1a1a1a;
+            background-color: #00FFAA;
+        }
+
+        .game-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 255, 170, 0.5);
+            filter: blur(10px);
+            z-index: -1;
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+
+        .game-button:hover:before {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mini Games</h1>
+    <div class="game-buttons">
+        <a href="https://flappybird.io" target="_blank" class="game-button">Flappy Bird</a>
+        <a href="https://gamesnacks.com/embed/7jthcohklk6l8/games/chessclassic?url=opera.com#eids=95329202&sc=1724967844773154745-3921479" target="_blank" class="game-button">Chess</a>
+        <a href="https://gamesnacks.com/embed/7jthcohklk6l8/games/archery?url=opera.com#eids=95329202" target="_blank" class="game-button">Archery World Tour</a>
+        <p>More comming soon...</p>
+    </div>
+    <footer>© 2024 Mini Games. All rights reserved. Disclaimer: Mini Games does not take ownership of the games it provides.</footer>
+</body>
+</html>
